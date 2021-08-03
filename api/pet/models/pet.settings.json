@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pets",
+  "info": {
+    "name": "Pet"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "pet_name": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "pet_image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "pet_rarity": {
+      "type": "enumeration",
+      "enum": [
+        "Legendary",
+        "Epic",
+        "Rare",
+        "Common"
+      ],
+      "required": true
+    },
+    "pet_point": {
+      "type": "integer",
+      "default": 0,
+      "required": true
+    }
+  }
+}
