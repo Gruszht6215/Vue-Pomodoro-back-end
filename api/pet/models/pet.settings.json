@@ -40,6 +40,11 @@
       "type": "integer",
       "default": 0,
       "required": true
+    },
+    "user_owner": {
+      "via": "pet_collection",
+      "plugin": "users-permissions",
+      "collection": "user"
     }
   }
 }
