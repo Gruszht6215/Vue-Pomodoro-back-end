@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "leaderboards",
   "info": {
-    "name": "Leaderboard"
+    "name": "Leaderboard",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -30,6 +31,9 @@
     "active_date": {
       "type": "datetime",
       "required": true
+    },
+    "activity": {
+      "type": "string"
     }
   }
 }
