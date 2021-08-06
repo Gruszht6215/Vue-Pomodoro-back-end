@@ -41,10 +41,9 @@
       "default": 0,
       "required": true
     },
-    "user_owner": {
+    "profile_owner": {
       "via": "pet_collection",
-      "plugin": "users-permissions",
-      "collection": "user"
+      "collection": "profile"
     }
   }
 }

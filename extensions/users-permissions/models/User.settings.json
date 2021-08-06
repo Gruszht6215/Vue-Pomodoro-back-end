@@ -59,14 +59,9 @@
       "plugin": "users-permissions",
       "configurable": false
     },
-    "user_point": {
-      "type": "integer",
-      "default": 0
-    },
-    "pet_collection": {
-      "collection": "pet",
-      "via": "user_owner",
-      "dominant": true
+    "user_profile": {
+      "via": "profile_user",
+      "model": "profile"
     }
   }
 }

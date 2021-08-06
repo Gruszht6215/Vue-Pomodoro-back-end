@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "profiles",
+  "info": {
+    "name": "Profile",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "profile_user": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "user_profile"
+    },
+    "profile_point": {
+      "type": "integer",
+      "default": 0,
+      "required": true
+    },
+    "pet_collection": {
+      "collection": "pet",
+      "via": "profile_owner",
+      "dominant": true
+    }
+  }
+}
