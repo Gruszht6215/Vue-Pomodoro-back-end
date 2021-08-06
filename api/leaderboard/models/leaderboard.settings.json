@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "leaderboards",
+  "info": {
+    "name": "Leaderboard"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "user_email": {
+      "type": "string",
+      "required": true
+    },
+    "point_type": {
+      "type": "enumeration",
+      "enum": [
+        "Receive",
+        "Spend"
+      ],
+      "required": true
+    },
+    "point_amount": {
+      "type": "integer",
+      "required": true
+    },
+    "active_date": {
+      "type": "datetime",
+      "required": true
+    }
+  }
+}
