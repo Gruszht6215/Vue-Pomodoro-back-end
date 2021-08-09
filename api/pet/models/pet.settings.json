@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "pets",
   "info": {
-    "name": "Pet"
+    "name": "Pet",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -14,7 +15,7 @@
     "pet_name": {
       "type": "string",
       "unique": true,
-      "required": true
+      "required": false
     },
     "pet_image": {
       "model": "file",
@@ -23,7 +24,7 @@
         "images"
       ],
       "plugin": "upload",
-      "required": true,
+      "required": false,
       "pluginOptions": {}
     },
     "pet_rarity": {
@@ -34,12 +35,13 @@
         "Rare",
         "Common"
       ],
-      "required": true
+      "required": false,
+      "default": "Common"
     },
     "pet_point": {
       "type": "integer",
       "default": 0,
-      "required": true
+      "required": false
     },
     "profile_owner": {
       "via": "pet_collection",

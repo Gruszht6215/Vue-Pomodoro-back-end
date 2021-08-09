@@ -20,11 +20,11 @@
     "profile_point": {
       "type": "integer",
       "default": 0,
-      "required": true
+      "required": false
     },
     "pet_collection": {
-      "collection": "pet",
       "via": "profile_owner",
+      "collection": "pet",
       "dominant": true
     }
   }
