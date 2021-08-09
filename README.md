@@ -1,4 +1,4 @@
-# project442_midterm_front-end
+# project442_midterm_back-end
 ## Strapi application 
 
 ### Project setup
